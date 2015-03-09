@@ -1,0 +1,5 @@
+name = Hosting Site Make
+description = Allows sites to be constructed from makefiles
+package = Hosting
+dependencies[] = hosting_site
+core = 7.x

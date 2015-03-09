@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implements hook_hosting_tasks().
+ */
+function hosting_site_make_hosting_tasks() {
+  $tasks = array();
+  $tasks['site']['site_make'] = array(
+    'title' => t('Build site makefile'),
+    'description' => t("Rebuilds the site's contributed modules and themes"),
+    'dialog' => true,
+  );
+  return $tasks;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function hosting_site_make_permission() {
+  return array(
+    'create site_make task' => array(
+      'title' => t('create site_make task'),
+      'description' => t('TODO')
+    ),
+  );
+}
+
