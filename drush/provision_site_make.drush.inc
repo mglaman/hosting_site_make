@@ -57,7 +57,7 @@ function drush_provision_site_make() {
  */
 function drush_provision_site_make_post_provision_site_make() {
   // Set site_offline to false and regenerate the config
-  drush_log(dt("Bringing the FUCKING SHIT out of maintenance"));
+  drush_log(dt("Bringing the site out of maintenance"));
   d()->site_enabled = TRUE;
   _provision_drupal_create_settings_file();
   provision_drupal_push_site();
